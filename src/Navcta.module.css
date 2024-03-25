@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+.NavCta  {
+    font-size: 15px;  
+    color: white;
+    background-color: #379FA8;
+    text-align: center;
+  }
+  

@@ -1,0 +1,12 @@
+
+.LandingPage {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.LandingImg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
