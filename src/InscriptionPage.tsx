@@ -6,7 +6,7 @@ const InscriptionPage: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [accepteConditions, setAccepteConditions] = useState(false);
-  const [accepteEmails, setAccepteEmails] = useState(false); // État pour stocker l'acceptation de recevoir des emails
+  const [accepteEmails, setAccepteEmails] = useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -47,7 +47,6 @@ const InscriptionPage: React.FC = () => {
           />
           <label htmlFor="accepteConditions">I accept the terms and condition of use</label>
         </div>
-        {/* Ajout de la nouvelle case à cocher pour accepter les emails */}
         <div className={styles.checkboxGroup}>
           <input
             type="checkbox"
