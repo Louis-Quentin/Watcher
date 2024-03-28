@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.form {
+  width: 300px;
+}
+
+.inputGroup {
+  margin-bottom: 70px;
+}
+
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.checkboxGroup label {
+  margin-left: 10px;
+}
+
+.backButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+}
+
+.inputGroup label {
+  display: block;
+}
+
+.submitButton {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 130%;
+  background-image: url('pexels-photo.webp');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: blur(3px);
+}
