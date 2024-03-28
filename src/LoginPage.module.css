@@ -41,6 +41,26 @@
   margin-top: 20px;
 }
 
+.appleButton {
+  background-image: url('png-clipart-apple-logo-apple-logo-computer-wallpaper.png');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 40px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.googleButton {
+  background-image: url('png-transparent-google-logo-google-text-trademark-logo-thumbnail.png');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 40px;
+  width: 100%;
+  margin-top: 20px;
+}
+
 .background {
   position: absolute;
   top: 0;
@@ -54,7 +74,15 @@
   filter: blur(3px);
 }
 
-.loginLink {
+.signupLink {
+  color: white;
+  text-decoration: underline;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.forgotLink {
   color: white;
   text-decoration: underline;
   display: block;

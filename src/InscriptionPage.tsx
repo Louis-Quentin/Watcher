@@ -57,6 +57,7 @@ const InscriptionPage: React.FC = () => {
           <label htmlFor="accepteEmails">I would like to receive the latest updates       and be notified about nearby watch releases and exclusive offers via newsletter.</label>
         </div>
         <button type="submit" className={styles.submitButton}>Sign up now</button>
+        <Link to="/login" className={styles.loginLink}>Log in</Link>
       </form>
       <div className={styles.background}></div>
     </div>
