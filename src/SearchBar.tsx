@@ -1,12 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import styles from './SearchBar.module.css';
 
-const SearchBar = () => {
+function SearchBar() {
   const [value, setValue] = useState('');
   const [suggestions, setSuggestions] = useState([]);
+  const navigate = useNavigate(); // This hook should be called inside the component
+
+  const navigateToContacts = () => {
+    navigate('/search');
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,18 +29,19 @@ const SearchBar = () => {
   }, [value]);
 
   return (
-        <div className={styles.container}>
-            <input
-                type="text"
-                className={styles.textbox}
-                placeholder="Search data..."
-                value={value}
-                onChange={(e) => {
-            setValue(e.target.value);
-            }}
-        />
-        </div>
+    <div className={styles.container}>
+      <input
+        type="text"
+        className={styles.textbox}
+        placeholder="Search data..."
+        value={value}
+        onChange={(e) => {
+          setValue(e.target.value);
+        }}
+      />
+      <button onClick={navigateToContacts}>Watch now</button>
+    </div>
   );
-};
+}
 
 export default SearchBar;
