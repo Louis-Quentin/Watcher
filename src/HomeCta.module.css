@@ -1,0 +1,16 @@
+.Title {
+    font-size: 15px;
+}
+
+.HomeCta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.SeeMore {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}

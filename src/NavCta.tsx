@@ -1,3 +1,5 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import { useState } from 'react';
 import  styles from './Navcta.module.css';
 import {Link} from 'react-router-dom';
