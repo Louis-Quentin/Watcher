@@ -1,0 +1,32 @@
+
+.LandingPage {
+    padding-top: 250px;
+    padding-bottom: 250px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("./img/HomeLanding.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.LandingPage::after {
+    content: ''; /* Required for pseudo-element */
+    position: absolute; /* Position the overlay */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity by changing the alpha value (0.5 for 50% opacity) */
+    z-index: 1; /* Ensure the overlay is above the image */
+    pointer-events: none;
+}
+
+.LandingImg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
