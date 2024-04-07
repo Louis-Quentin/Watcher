@@ -1,0 +1,58 @@
+[
+  {
+    "distance": "100m",
+    "marque": "Rolex",
+    "url": "https://example.com/rolex.jpg",
+    "prix": 5000,
+    "nom": "Submariner",
+    "disponible": true
+  },
+  {
+    "distance": "200m",
+    "marque": "Omega",
+    "url": "https://example.com/omega.jpg",
+    "prix": 4000,
+    "nom": "Speedmaster",
+    "disponible": true
+  },
+  {
+    "distance": "300m",
+    "marque": "Tag Heuer",
+    "url": "https://example.com/tag-heuer.jpg",
+    "prix": 3000,
+    "nom": "Aquaracer",
+    "disponible": false
+  },
+  {
+    "distance": "100m",
+    "marque": "Seiko",
+    "url": "https://example.com/seiko.jpg",
+    "prix": 2000,
+    "nom": "SKX007",
+    "disponible": true
+  },
+  {
+    "distance": "50m",
+    "marque": "Citizen",
+    "url": "https://example.com/citizen.jpg",
+    "prix": 1500,
+    "nom": "Eco-Drive",
+    "disponible": false
+  },
+  {
+    "distance": "300m",
+    "marque": "Casio",
+    "url": "https://example.com/casio.jpg",
+    "prix": 1000,
+    "nom": "G-Shock",
+    "disponible": true
+  },
+  {
+    "distance": "50m",
+    "marque": "Swatch",
+    "url": "https://example.com/swatch.jpg",
+    "prix": 500,
+    "nom": "Sistem51",
+    "disponible": false
+  }
+]

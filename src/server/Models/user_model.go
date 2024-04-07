@@ -37,3 +37,13 @@ type AreaState struct {
 	FieldValue_3  string
 	PrintName     string
 }
+
+type Watch struct {
+	gorm.Model
+	Name		string `gorm:"unique"`
+	Price   	float64
+	Range		int
+	Url     	string
+	Brand		string
+	Available	bool
+}

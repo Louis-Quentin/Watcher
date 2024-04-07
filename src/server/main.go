@@ -47,6 +47,7 @@ func apply_routes(r *gin.Engine, db *Database.Database) {
 	r.GET("/", router.Handle_home_request)
 	r.POST("/signup", controller.Signup)
 	r.POST("/login", controller.Login)
+	r.GET("/recommendation", router.Home_reco)
 	//r.GET("/google_callback", controller.Google_callback)
 	//r.GET("/google_login", controller.Google_login)
 	//r.POST("/update_area" /*Middleware.Require_auth,*/ /*,Middleware.Require_google_auth*/, controller.Update_area)

@@ -4,21 +4,51 @@ import (
 	"Area/Controllers"
 	"Area/HandleLifeCycle"
 	"Area/Models"
-	_ "Area/Models"
 	"encoding/json"
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
-	_ "gorm.io/gorm"
 	"log"
 	"net"
 	"net/http"
 	"strconv"
 	"time"
+	"io/ioutil"
+	"fmt"
+	"path/filepath"
 )
 
 type AboutStruct struct {
 	Str []byte `json:"value"`
 }
+
+func Home_reco(context *gin.Context) {
+	fp := "./sample.json"
+	absFp, err := filepath.Abs(fp)
+	if err != nil {
+		log.Fatal("Error getting absolute file path: ", err)
+		return
+	}
+
+	content, err := ioutil.ReadFile(absFp)
+	if err != nil {
+		log.Fatal("Error when opening file: ", err)
+		return
+	}
+
+	var payload []Models.Watch
+	err = json.Unmarshal(content, &payload)
+	if err != nil {
+		log.Fatal("Error during Unmarshal(): ", err)
+		return
+	}
+
+	for _, watch := range payload {
+		fmt.Println(watch.Name)
+	}
+
+	context.JSON(http.StatusOK, payload)
+}
+
 
 func Handle_home_request(context *gin.Context) {
 	var msg string

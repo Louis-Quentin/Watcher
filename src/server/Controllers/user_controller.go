@@ -1,7 +1,6 @@
 package Controllers
 
 import (
-	"Area/Debug"
 	"Area/Models"
 	"encoding/json"
 	_ "fmt"
@@ -49,7 +48,7 @@ func Signup(r *gin.Context) {
 	} else {
 		db.FirstOrCreate(Build_user("", body.Email, "", body.Password), Models.User{Email: body.Email})
 	}
-	Debug.Print_all_users(r)
+	//Debug.Print_all_users(r)
 	/*if err := db.Where(Models.User{Email: body.Email}).
 		Assign(Models.User{Email: body.Email, Google_refresh_token: "", Google_access_token: "", Password: body.Password}).
 		FirstOrCreate(Build_user("", body.Email, "", body.Password)).Error; err != nil {
@@ -57,7 +56,7 @@ func Signup(r *gin.Context) {
 		println("failed to build user with email = ", body.Email)
 		return
 	}*/
-	r.Redirect(http.StatusTemporaryRedirect, "http://localhost:8081/explore")
+	r.Redirect(http.StatusTemporaryRedirect, "http://localhost:8081/")
 }
 
 func Login(r *gin.Context) {
@@ -113,5 +112,5 @@ func Login(r *gin.Context) {
 	//r.SetCookie("Authorization", token_string, 3600*24*30, "", "", false, false)
 
 	r.SetCookie("email", body.Email, 3600*24*30, "", "", false, false)
-	r.Redirect(http.StatusTemporaryRedirect, "http://localhost:8081/explore")
+	r.Redirect(http.StatusTemporaryRedirect, "http://localhost:8081/")
 }
