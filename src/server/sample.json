@@ -6,8 +6,8 @@
         "DeletedAt": null,
         "Name": "Rolex Submariner",
         "Price": 8500.00,
-        "Range": 300,
-        "Url": "https://example.com/rolex_submariner.jpg",
+        "Range": 30,
+        "Url": "http://localhost:3000/images/rolex_submariner.jpg",
         "Brand": "Rolex",
         "Available": true
     },
@@ -18,8 +18,8 @@
         "DeletedAt": null,
         "Name": "Omega Speedmaster Professional",
         "Price": 4500.00,
-        "Range": 100,
-        "Url": "https://example.com/omega_speedmaster.jpg",
+        "Range": 10,
+        "Url": "http://localhost:3000/images/omega_speedmaster.jpg",
         "Brand": "Omega",
         "Available": false
     },
@@ -30,8 +30,8 @@
         "DeletedAt": null,
         "Name": "Tag Heuer Carrera",
         "Price": 2500.00,
-        "Range": 200,
-        "Url": "https://example.com/tag_heuer_carrera.jpg",
+        "Range": 22,
+        "Url": "http://localhost:3000/images/tag_heuer_carrera.jpg",
         "Brand": "Tag Heuer",
         "Available": true
     },
@@ -42,8 +42,8 @@
         "DeletedAt": null,
         "Name": "Seiko Prospex",
         "Price": 1200.00,
-        "Range": 200,
-        "Url": "https://example.com/seiko_prospex.jpg",
+        "Range": 8,
+        "Url": "http://localhost:3000/images/seiko_prospex.jpg",
         "Brand": "Seiko",
         "Available": false
     },
@@ -54,8 +54,8 @@
         "DeletedAt": null,
         "Name": "Citizen Eco-Drive",
         "Price": 300.00,
-        "Range": 50,
-        "Url": "https://example.com/citizen_eco_drive.jpg",
+        "Range": 5,
+        "Url": "http://localhost:3000/images/citizen_eco_drive.jpg",
         "Brand": "Citizen",
         "Available": true
     },
@@ -66,8 +66,8 @@
         "DeletedAt": null,
         "Name": "Casio G-Shock",
         "Price": 150.00,
-        "Range": 200,
-        "Url": "https://example.com/casio_g_shock.jpg",
+        "Range": 26,
+        "Url": "http://localhost:3000/images/casio_g_shock.jpg",
         "Brand": "Casio",
         "Available": true
     },
@@ -78,8 +78,8 @@
         "DeletedAt": null,
         "Name": "Swatch Sistem51",
         "Price": 100.00,
-        "Range": 50,
-        "Url": "https://example.com/swatch_sistem51.jpg",
+        "Range": 2,
+        "Url": "http://localhost:3000/images/swatch_sistem51.jpg",
         "Brand": "Swatch",
         "Available": false
     }

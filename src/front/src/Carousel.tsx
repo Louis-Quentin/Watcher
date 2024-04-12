@@ -3,27 +3,44 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Watch } from './DataStructure.js';
+import styles from './Carousel.module.css';
+import { hostname } from 'os';
 
-const Carousel = ({ watchlist }: {watchlist:Watch[]}) => {
+const Carousel: React.FC<{ watchlist: Watch[] }> = ({ watchlist }) => {
+  const hostname = "http://localhost:3000/";
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
-    slidesToShow: watchlist.length, // Show all slides
-    slidesToScroll: 1
+    speed: 9000,
+    slidesToShow: 3,
+    slidesToScroll: 1, // Change to scroll one slide at a time
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: 'linear',
+    pauseOnHover: true,
+    pauseOnFocus: true,
   };
 
+  watchlist.forEach((element) => {
+    console.log(element.Url);
+  })
   return (
     <Slider {...settings}>
       {watchlist.map((watch, index) => (
-        <div key={index}>
-          {/* Render your watch element here */}
-          <h3>{watch.Name}</h3>
-          <h4>{watch.Brand}</h4>
-          <h5>{watch.Price}</h5>
-          <h5>{watch.Range}</h5>
-          {/* Add other watch information as needed */}
+        <div key={index} className={styles.slide}>
+         <div className={styles.slideContent} style={{ backgroundImage: `url(${watch.Url})` }}>
+            <div className={styles.slideHeader}>
+              <div className={`${styles.Name} ${styles.Tag}`}>{watch.Name}</div>
+              <div className={`${styles.Price} ${styles.Tag}`}>{watch.Price} $</div>
+              <div className={`${styles.Range} ${styles.Tag}`}>{watch.Range} km</div>
+            </div>
+            <div className={styles.slideBottom}>
+              <div className={`${styles.Brand} ${styles.Tag}`}>{watch.Brand}</div>
+              <div className={`${styles.Available} ${styles.Tag}`} style={{ backgroundImage: watch.Available ? `url('${hostname}images/in-stock.png')` : `url('${hostname}images/out-of-stock.png')` }}>
+            </div>
+          </div>
         </div>
+      </div>
       ))}
     </Slider>
   );
