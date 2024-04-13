@@ -15,33 +15,44 @@
     color: black;
     font-size: 18px;
   }
-
   /* navbar */
   .navbar {
-    background-color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    min-height: 70px;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+   padding-left: 9.25rem;
+   padding-right: 9.25rem;
+   background-color:white;
   }
 
 
   /* logo  */
   .logo {
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+   display: flex;
+   opacity: 1;
+   height: 70%;
+   transition: fill .6s ease;
+   margin:auto;
+   border-style: none;
+   box-sizing: border-box;  
   }
 
-
-  /* ul  */
   .navMenu {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    flex-flow: row;
+    justify-content: center;
     align-items: center;
-    gap: 60px;
+    height: 153px;
+    transition: 1s;
+    background-color:white;
+    position: relative;
+    z-index: 60;
+    box-sizing: border-box;
   }
+
 
   /* media queries */
 
@@ -98,3 +109,74 @@
       margin: 16px 0;
     }
   }
+
+.NavLeft {
+  width: 41.6666%;
+  float: 0 0 auto;
+  min-width: 0;
+  min-height: 0;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  transition: color 0.3s;
+  box-sizing: border-box;
+}
+
+
+.NavRight {
+  width: 41.6666%;
+  float: 0 0 auto;
+  min-width: 0;
+  min-height: 0;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  transition: color 0.3s;
+  box-sizing: border-box;
+}
+
+.Map {
+  
+}
+
+.navLink {
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 35px;
+  padding-right: 35px;
+  color:black;
+  font-family: 'Times New Roman', Times, serif;
+  transition: 0.3s;
+}
+
+.navLink:hover {
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.BurgerMenu {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .navbar-menu-toggle {
+    display: block; /* Display menu toggle */
+    cursor: pointer;
+  }
+
+  .navbar-menu.active {
+    display: flex; /* Show menu when active */
+  }
+}

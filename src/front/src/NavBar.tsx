@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import { useState } from 'react';
 import  styles from './css/Navbar.module.css';
 import {Link} from 'react-router-dom';
+import { url } from 'inspector';
+
+function ToggleMenu () {
+
+}
 
 function Navbar() {
 
@@ -17,35 +22,33 @@ function Navbar() {
     setIsActive(false)
   }
   return (
-    <div className="App">
-      <header className="App-header">
-
+    
         <nav className={`${styles.navbar}`}>
-
-          {/* logo */}
-          <Link to="/">
-            <img
-                alt='logo' style={{ width: 100 }} src={String(logo)} />
-          </Link>
           <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
+            <div className={styles.NavLeft}>
+            <img  src={require("./css/img/burger_menu.png")} alt="Menu" onClick={ToggleMenu} className={`${styles.BurgerMenu}`} />
             <li onClick={removeActive}>
-              <a href='#home' className={`${styles.navLink}`}>Home</a>
+              <a href='#home' className={`${styles.navLink} ${styles.Map}`}>Map</a>
             </li>
             <li onClick={removeActive}>
-              <a href='#home' className={`${styles.navLink}`}>Catalog</a>
+              <a href='#home' className={`${styles.navLink}`}>Stores</a>
             </li>
             <li onClick={removeActive}>
-              <a href='#home' className={`${styles.navLink}`}>All products</a>
-            </li>
+              <a href='#home' className={`${styles.navLink}`}>Order</a>
+          </li>
+            </div>
+            <img src={require('./css/img/watcher_logo.png')} className={`${styles.logo}`} alt="Logo" />
+            <div className={styles.NavRight}>
             <li onClick={removeActive}>
               <a href='#home' className={`${styles.navLink}`}>Contact</a>
             </li>
             <li onClick={removeActive}>
-              <Link to="/inscription" className={`${styles.navLink}`}>Inscription</Link>
+              <Link to="/inscription" className={`${styles.navLink}`}>Signup</Link>
             </li>
             <li onClick={removeActive}>
-              <Link to="/login" className={`${styles.navLink}`}>Log in</Link>
+              <Link to="/login" className={`${styles.navLink}`}>LogIn</Link>
             </li>
+            </div>
           </ul>
 
           <div className={`${styles.hamburger} ${isActive ? styles.active : ''}`}  onClick={toggleActiveClass}>
@@ -54,9 +57,6 @@ function Navbar() {
             <span className={`${styles.bar}`}></span>
           </div>
         </nav>
-
-      </header>
-    </div>
   );
 }
 

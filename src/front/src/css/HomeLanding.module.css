@@ -1,7 +1,11 @@
 
+@font-face {
+    font-family: 'TimesNewLightItalic';
+    src: url('http://localhost:3000/fonts/times-now-extralight-italic.woff2') format('woff2')
+  }
+  
+
 .LandingPage {
-    padding-top: 250px;
-    padding-bottom: 250px;
     justify-content: center;
     display: flex;
     width: 100%;
@@ -13,16 +17,68 @@
     position: relative;
 }
 
-.LandingPage::after {
-    content: ''; /* Required for pseudo-element */
-    position: absolute; /* Position the overlay */
+.Header {
+    width: 600px;
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+  }
+  
+.TitleHeader {
+    font-size: 60px;
+    font-weight: 200;
+    /* Other styles */
+}
+
+.Title {
+    font-size: 60px;
+    font-family: "TimesNewLightItalic", sans-serif;
+    letter-spacing: -.186rem;
+}
+
+.Content {
+    margin-top: 80px;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: .026rem;
+    line-height: 1.65;
+    font-family:'Times New Roman', Times, serif
+}
+
+.Button {
+    display: flex;
+    margin-top: 35px;
+}
+
+.Line {
+    width: 40px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid rgb(255, 255, 255); /* Adjust color and thickness as needed */
+}
+
+.Text {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.HomeVod {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.HomeVod video {
+    display: flex;
+    position: cover;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity by changing the alpha value (0.5 for 50% opacity) */
-    z-index: 1; /* Ensure the overlay is above the image */
-    pointer-events: none;
+    object-fit: cover;
 }
 
 .LandingImg {

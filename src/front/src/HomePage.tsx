@@ -7,7 +7,6 @@ import HomeCta from './HomeCta';
     const HomePage: React.FC = () => {
     return (
         <div className='HomePage'>
-            <NavbarCta/>
             <Navbar/>
             <HomeLanding/>
             <HomeCta/>
