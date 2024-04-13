@@ -25,6 +25,7 @@
    padding-left: 9.25rem;
    padding-right: 9.25rem;
    background-color:white;
+   min-height: 140px;
   }
 
 
@@ -54,61 +55,11 @@
   }
 
 
-  /* media queries */
-
-  @media screen and (max-width: 780px){
-
-    /* hamburger */
-    .hamburger {
-      display: block;
-      cursor: pointer;
-    }
-
-    .bar {
-          background-color: #120f0b;
-          width: 20px;
-          height: 3px;
-          display: block;
-          margin: 5px;
-          -webkit-transition: 0.3s ease-in-out;
-          transition: 0.3s ease-in-out;
-      }
-
-    /* adding active class to the bars  */
-    .hamburger.active .bar:nth-child(2){
-      opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1){
-      transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3){
-      transform: translateY(-8px) rotate(-45deg);
-    }
-
-
-    /* navMenu */
-
-    .navMenu{
-      position: absolute;
-      flex-direction: column;
-      gap: 0;
-      top: 70px;
-      left: -100%;
-      text-align: start;
-      width: 100%;
-      transition: 0.7s ease-in-out;
-      background-color: white;
-      padding: 10px;
-    }
-
-    .navMenu.active{
-      left: 0;
-    }
-
-    .navMenu li {
-      margin: 16px 0;
-    }
+@media (max-width: 1130px) {
+  .navLink {
+    display: none;
   }
+}
 
 .NavLeft {
   width: 41.6666%;
