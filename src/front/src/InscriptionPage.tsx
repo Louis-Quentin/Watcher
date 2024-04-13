@@ -18,7 +18,6 @@ const InscriptionPage: React.FC = () => {
 
   return (
     <div className={styles.container}>
-      <Link to="/" className={styles.backButton}>Return</Link>
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.inputGroup}>
           <label htmlFor="email">Email :</label>
@@ -59,7 +58,6 @@ const InscriptionPage: React.FC = () => {
         <button type="submit" className={styles.submitButton}>Sign up now</button>
         <Link to="/login" className={styles.loginLink}>Log in</Link>
       </form>
-      <div className={styles.background}></div>
     </div>
   );
 }
