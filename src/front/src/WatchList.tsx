@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './css/WatchList.module.css';
 import test from './watchs_sample.json';
-    import { Watch } from './DataStructure.js';
+import { Watch } from './DataStructure.js';
 import { cp } from 'fs';
 
 async function fetchRecommendations(): Promise<Watch[]> {

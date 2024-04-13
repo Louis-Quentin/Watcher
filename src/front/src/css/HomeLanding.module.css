@@ -5,6 +5,20 @@
   }
   
 
+@media (max-width: 1100px) {
+    .HomeVod {
+        display: none;
+    }
+}
+
+.ColorDa {
+    background: linear-gradient(to right, #061530, #233c60); /* Adjust the colors as needed */
+}
+
+.ColorDa2 {
+    background: linear-gradient(to right, #9f8764, #eddabb); /* Adjust the colors as needed */
+}
+
 .LandingPage {
     justify-content: center;
     display: flex;
@@ -66,20 +80,22 @@
 }
 
 .HomeVod {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.HomeVod video {
-    display: flex;
-    position: cover;
+    position: relative; /* Set the position of the container */
+    width: 100%; /* Set the width of the container */
+    height: 0; /* Set initial height to 0 */
+    padding-top: 56.25%; /* Set the aspect ratio (9/16 * 100%) */
+    overflow: hidden; /* Hide overflow content */
+  }
+  
+  .HomeVod video {
+    position: absolute; /* Set the position of the video */
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    width: 100%; /* Set the width of the video */
+    height: 100%; /* Set the height of the video */
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+  }
+  
 
 .LandingImg {
     width: 100%;
