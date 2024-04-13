@@ -48,14 +48,14 @@
   padding: 10px;  /* Ajouter un peu de padding pour agrandir le bouton */
   font-size: 1.2rem; /* Augmenter la taille de la police du bouton */
   border-radius: 10px; /* Arrondir les coins du bouton de soumission */
-  background-color: rgb(42, 51, 87);/* Vous pouvez choisir une couleur de fond */
-  color: rgb(211, 161, 74); /* Choisir la couleur du texte */
+  background-color: rgb(17, 55, 135);/* Vous pouvez choisir une couleur de fond */
+  color: rgb(255, 208, 39); /* Choisir la couleur du texte */
   border: none; /* Supprimer la bordure par défaut */
   cursor: pointer; /* Permet de montrer que le bouton est cliquable */
 }
 
 .loginLink {
-  color: rgb(211, 161, 74);
+  color: rgb(255, 208, 39);
   text-decoration: underline;
   display: block;
   text-align: center;
