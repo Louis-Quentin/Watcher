@@ -42,20 +42,40 @@
   display: block;
 }
 
+.ColorDa {
+  background: linear-gradient(to right, #061530, #233c60); /* Adjust the colors as needed */
+}
+
+.ColorDa2 {
+  background: linear-gradient(to right, #9f8764, #eddabb); /* Adjust the colors as needed */
+}
+
+.logo {
+  display: flex;
+  opacity: 1;
+  width: 100px; /* Ajuste la largeur du logo à 100px */
+  height: auto;
+  transition: fill .6s ease;
+  margin:auto;
+  border-style: none;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+ }
+
 .submitButton {
   width: 100%;
   margin-top: 20px;
   padding: 10px;  /* Ajouter un peu de padding pour agrandir le bouton */
   font-size: 1.2rem; /* Augmenter la taille de la police du bouton */
   border-radius: 10px; /* Arrondir les coins du bouton de soumission */
-  background-color: rgb(17, 55, 135);/* Vous pouvez choisir une couleur de fond */
-  color: rgb(255, 208, 39); /* Choisir la couleur du texte */
+  background-color: linear-gradient(to right, #061530, #233c60);/* Vous pouvez choisir une couleur de fond */
+  color: linear-gradient(to right, #9f8764, #eddabb); /* Choisir la couleur du texte */
   border: none; /* Supprimer la bordure par défaut */
   cursor: pointer; /* Permet de montrer que le bouton est cliquable */
 }
 
 .loginLink {
-  color: rgb(255, 208, 39);
+  color: linear-gradient(to right, #9f8764, #eddabb);
   text-decoration: underline;
   display: block;
   text-align: center;
