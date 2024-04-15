@@ -130,4 +130,10 @@
   .navbar-menu.active {
     display: flex; /* Show menu when active */
   }
+
+  .profileLogo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
