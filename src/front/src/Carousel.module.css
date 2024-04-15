@@ -10,10 +10,10 @@
 
 .slideContent {
   width: 520px;
-  height: 260px;
+  height: 360px;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-radius: 20px;
+  border-radius: 0px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); /* Small box shadow */
   background-position: center;
   background-repeat: no-repeat;
