@@ -20,6 +20,7 @@ const InscriptionPage: React.FC = () => {
     <div className={styles.container}>
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.inputGroup}>
+        <img src={require('./css/img/watcher_logo.png')} className={`${styles.logo}`} alt="Logo" />
           <label htmlFor="email">Email :</label>
           <input
             type="text"
