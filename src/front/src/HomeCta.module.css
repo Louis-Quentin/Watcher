@@ -1,11 +1,113 @@
+@font-face {
+    font-family: 'TimesNewLightItalic';
+    src: url('http://localhost:3000/fonts/times-now-extralight-italic.woff2') format('woff2')
+  }
+  
+
+
 .Title {
-    font-size: 15px;
+    opacity: 0;
+    width: 100%;
+    display: flex;
+    font-weight: 800;
+    font-size: 55px;
+    color: white;
+    font-family: 'TimesNewLightItalic';
+    justify-content: center;
+    transition: opacity 1.7s;
+
+}
+
+.Visible {
+    opacity: 1;
+}
+
+.CardContainer {
+    padding-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 17%;
+    padding-right: 17%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.CardImage {
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    background-repeat: no-repeat;
+}
+
+.CardName {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+@keyframes uprising {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.Card:nth-child(1) {
+    animation-delay: 0s; /* No delay for the first card */
+}
+
+.Card:nth-child(2) {
+    animation-delay: 0.7s; /* No delay for the first card */
+}
+
+.Card:nth-child(3) {
+    animation-delay: 1.4s; /* No delay for the first card */
+}
+
+.CardContent {
+    text-align: center;
+}
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 380px;
+    animation: uprising 1.5s ease forwards;
+    opacity: 0;
+    font-family: "TimesNewLightItalic";
+}
+
+.CardTag {
+    display: inline-block !important;
+    padding-left: 2px;
+    padding-right: 2px;
+    min-width: 100px;
+    margin-top: 10px;
+    font-weight: 600;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+    border-radius: 2px;
+}
+
+.HomeCtaContainer .CardContainer.Visible {
+    animation: uprising 0.5s ease forwards;
+  }
+
+.HomeCtaContainer {
+    display: flex;
+    flex-direction:column;
+    padding-top: 45px;
+    background-color: black;
 }
 
 .HomeCta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
 }
 
