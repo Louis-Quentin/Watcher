@@ -3,6 +3,8 @@ import Navbar from './NavBar';
 import NavbarCta from './NavCta';
 import HomeLanding from './HomeLanding';
 import HomeCta from './HomeCta';
+import MapCta from './MapCta';
+import Footer from './Footer'
 
     const HomePage: React.FC = () => {
     return (
@@ -10,6 +12,8 @@ import HomeCta from './HomeCta';
             <Navbar/>
             <HomeLanding/>
             <HomeCta/>
+            <MapCta/>
+            <Footer/>
         </div>
     );
     };

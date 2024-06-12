@@ -1,0 +1,76 @@
+.MapCta {
+    display: flex;
+}
+.Background {
+    position: relative;
+    background-image: url("./img/MapCta.jpg"); /* Path to your image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.Background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: brightness(100%); /* Adjust the brightness as needed */
+    transition: filter 0.4s; /* Transition for the filter property */
+}
+
+.Background:hover::before {
+    filter: brightness(20%); /* Adjust the brightness on hover as needed */
+}
+
+.Header {
+    width: 600px;
+    position: relative;
+    top: 55%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color:white;
+  }
+  
+.TitleHeader {
+    font-size: 60px;
+    font-weight: 200;
+    /* Other styles */
+}
+
+.Title {
+    font-size: 60px;
+    font-family: "TimesNewLightItalic", sans-serif;
+    letter-spacing: -.186rem;
+}
+
+.Content {
+    margin-top: 80px;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: .026rem;
+    line-height: 1.65;
+    font-family:'Times New Roman', Times, serif
+}
+
+.Button {
+    display: flex;
+    margin-top: 35px;
+}
+
+.Line {
+    width: 40px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid rgb(255, 255, 255); /* Adjust color and thickness as needed */
+}
+
+.Text {
+    font-size: 15px;
+    font-weight: 600;
+}

@@ -28,7 +28,7 @@ function Navbar() {
             <div className={styles.NavLeft}>
             <img  src={require("./css/img/burger_menu.png")} alt="Menu" onClick={ToggleMenu} className={`${styles.BurgerMenu}`} />
             <li onClick={removeActive}>
-              <a href='#home' className={`${styles.navLink} ${styles.Map}`}>Map</a>
+              <a href='Map' className={`${styles.navLink} ${styles.Map}`}>Map</a>
             </li>
             <li onClick={removeActive}>
               <a href='#home' className={`${styles.navLink}`}>Stores</a>

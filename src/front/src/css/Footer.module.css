@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: white;
+}
+
+.topFooter {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.bottomFooter {
+    justify-content: space-between;
+}
