@@ -15,9 +15,9 @@ const LoginPage: React.FC = () => {
 
   return (
     <div className={styles.container}>
-      <Link to="/" className={styles.backButton}>Return</Link>
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.inputGroup}>
+        <img src={require('./css/img/watcher_logo.png')} className={`${styles.logo}`} alt="Logo" />
           <label htmlFor="email">Email :</label>
           <input
             type="text"

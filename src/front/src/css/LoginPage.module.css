@@ -4,15 +4,29 @@
   align-items: center;
   height: 100vh;
   position: relative;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .form {
-  width: 300px;
+  width: 400px;
 }
 
 .inputGroup {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 10px; /* Ajoutez un petit écart sous le label */
+}
+
+.inputGroup input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
 }
 
 .checkboxGroup {
@@ -25,57 +39,75 @@
   margin-left: 10px;
 }
 
-.backButton {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  color: white;
-}
-
 .inputGroup label {
   display: block;
 }
 
-.submitButton {
+.logo {
+  display: flex;
+  opacity: 1;
+  width: 100px; /* Ajuste la largeur du logo à 100px */
+  height: auto;
+  transition: fill .6s ease;
+  margin:auto;
+  border-style: none;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+ }
+
+ .submitButton {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 0px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px;  /* Ajouter un peu de padding pour agrandir le bouton */
+  font-size: 1.2rem; /* Augmenter la taille de la police du bouton */
+  border-radius: 10px; /* Arrondir les coins du bouton de soumission */
+  background-color: linear-gradient(to right, #061530, #233c60);/* Vous pouvez choisir une couleur de fond */
+  color: linear-gradient(to right, #9f8764, #eddabb); /* Choisir la couleur du texte */
+  border: none; /* Supprimer la bordure par défaut */
+  cursor: pointer; /* Permet de montrer que le bouton est cliquable */
 }
 
 .appleButton {
   background-image: url('./img/png-clipart-apple-logo-apple-logo-computer-wallpaper.png');
-  background-size: 20px;
+  background-size: 65px;
   background-repeat: no-repeat;
   background-position: 10px center;
+  background-position: -5px center;
   padding-left: 40px;
+  font-family: 'Times New Roman', Times, serif;
   width: 100%;
   margin-top: 20px;
+  padding: 10px;  /* Ajouter un peu de padding pour agrandir le bouton */
+  font-size: 1.2rem; /* Augmenter la taille de la police du bouton */
+  border-radius: 10px; /* Arrondir les coins du bouton de soumission */
+  background-color: linear-gradient(to right, #061530, #233c60);/* Vous pouvez choisir une couleur de fond */
+  color: linear-gradient(to right, #9f8764, #eddabb); /* Choisir la couleur du texte */
+  border: none; /* Supprimer la bordure par défaut */
+  cursor: pointer; /* Permet de montrer que le bouton est cliquable */
 }
 
 .googleButton {
   background-image: url('./img/png-transparent-google-logo-google-text-trademark-logo-thumbnail.png');
-  background-size: 20px;
+  background-size: 35px;
   background-repeat: no-repeat;
   background-position: 10px center;
   padding-left: 40px;
+  font-family: 'Times New Roman', Times, serif;
   width: 100%;
   margin-top: 20px;
-}
-
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 110%;
-  height: 130%;
-  background-image: url('./img/pexels-photo.webp');
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-  filter: blur(3px);
+  padding: 10px;  /* Ajouter un peu de padding pour agrandir le bouton */
+  font-size: 1.2rem; /* Augmenter la taille de la police du bouton */
+  border-radius: 10px; /* Arrondir les coins du bouton de soumission */
+  background-color: linear-gradient(to right, #061530, #233c60);/* Vous pouvez choisir une couleur de fond */
+  color: linear-gradient(to right, #9f8764, #eddabb); /* Choisir la couleur du texte */
+  border: none; /* Supprimer la bordure par défaut */
+  cursor: pointer; /* Permet de montrer que le bouton est cliquable */
 }
 
 .signupLink {
-  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  color: linear-gradient(to right, #9f8764, #eddabb);
   text-decoration: underline;
   display: block;
   text-align: center;
@@ -83,7 +115,8 @@
 }
 
 .forgotLink {
-  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  color: linear-gradient(to right, #9f8764, #eddabb);
   text-decoration: underline;
   display: block;
   text-align: center;

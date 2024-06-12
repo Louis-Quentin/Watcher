@@ -48,6 +48,9 @@ function Navbar() {
             <li onClick={removeActive}>
               <Link to="/login" className={`${styles.navLink}`}>LogIn</Link>
             </li>
+              <a href="/profile">
+                <img src={require("./css/img/burger_menu.png")} alt="Menu" onClick={ToggleMenu} className={`${styles.profileLogo}`} />
+              </a>
             </div>
           </ul>
 

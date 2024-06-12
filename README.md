@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+# Watcher
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Watcher is a web application designed to assist watch enthusiasts in locating and purchasing their desired timepieces from nearby sellers. With features like watch browsing, seller mapping, and online ordering, it aims to streamline the process of finding the perfect watch.
 
-## Available Scripts
+![Watch Finder Demo](./public/watcher_readme.gif)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Watch Browsing**: Users can explore a wide range of watches categorized by brand, style, and price.
+- **Seller Mapping**: Visualize all the sellers nearby on an interactive map for easy navigation.
+- **Online Ordering**: Users can place orders for their selected watches directly through the platform.
+- **Search Functionality**: Enables users to search for specific watches or sellers based on various criteria.
+- **Responsive Design**: The website is optimized for various devices, ensuring a seamless experience across desktop and mobile platforms.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies Used
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **React**: Frontend development framework for building the user interface.
+- **GoLang**: Backend language used for server-side logic and API development.
+- **Google Maps API**: Integration for mapping seller locations.
+- **HTML/CSS**: Markup and styling for the website's layout and appearance.
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To launch the project locally, follow these steps:
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js and npm installed on your machine.
+- GoLang installed on your machine.
+- Google Maps API Key (for mapping functionality).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repository:
+2. Navigate to the project directory:
+   ```bash
+   cd watcher
+3. Install FrontEnd dependencies:
+   ```bash
+   npm install
+4. Install Backend Dependencies:
+     ```bash
+     go mod tidy
+5. Start the FrontEnd server:
+    ```bash
+    npm start
+6. Start the BackEnd server using docker:
+   ```bash
+   docker-compose build
+   docker-compose up
+   ```
