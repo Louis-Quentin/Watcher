@@ -33,16 +33,15 @@ To launch the project locally, follow these steps:
 2. Navigate to the project directory:
    ```bash
    cd watcher
-   ```
 3. Install FrontEnd dependencies:
    ```bash
-   npm install```
+   npm install
 4. Install Backend Dependencies:
      ```bash
-     go mod tidy```
+     go mod tidy
 5. Start the FrontEnd server:
     ```bash
-    npm start```
+    npm start
 6. Start the BackEnd server using docker:
    ```bash
    docker-compose build
