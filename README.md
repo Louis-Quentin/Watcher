@@ -2,6 +2,8 @@
 
 Watcher is a web application designed to assist watch enthusiasts in locating and purchasing their desired timepieces from nearby sellers. With features like watch browsing, seller mapping, and online ordering, it aims to streamline the process of finding the perfect watch.
 
+![Watch Finder Demo](./public/watcher_readme.gif)
+
 ## Features
 
 - **Watch Browsing**: Users can explore a wide range of watches categorized by brand, style, and price.
