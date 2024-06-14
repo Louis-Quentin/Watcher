@@ -1,16 +1,92 @@
+@font-face {
+    font-family: 'TimesNewLightItalic';
+    src: url('http://localhost:3000/fonts/times-now-extralight-italic.woff2') format('woff2')
+  }
+
 .footer {
     display: flex;
     flex-direction: column;
     padding-left: 20%;
     padding-right: 20%;
+    padding-top: 3%;
+    padding-bottom: 1%;
     background-color: white;
 }
 
+.title {
+    font-family: TimesNewLightItalic;
+    font-weight: bold;
+    font-size: 19px;
+}
+
 .topFooter {
+    display: inline-flex;
     padding-left: 20%;
     padding-right: 20%;
+    justify-content: space-between;
 }
 
 .bottomFooter {
+    justify-content: center;
+    display: flex;
+}
+
+.media {
+    display: inline-flex;
     justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.instagram {
+    background-image: url("./img/instagram.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 3%;
+    height: 4vh;
+}
+
+.facebook {
+    background-image: url("./img/facebook.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 3%;
+    height: 4vh;
+}
+
+.tiktok {
+    background-image: url("./img/tiktok.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 3%;
+    height: 4vh;
+}
+
+.yt {
+    background-image: url("./img/yt.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 3%;
+    height: 4vh;
+}
+
+
+.x {
+    background-image: url("./img/twitter.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 3%;
+    height: 4vh;
+}
+
+.policies {
+    padding-right: 8px;
+    font-family: TimesNewLightItalic;
+    font-weight: bold;
+    font-size: 19px;
 }
