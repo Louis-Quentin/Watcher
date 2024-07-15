@@ -1,55 +1,87 @@
 .container {
-    width: '100%';
-    height: '100vh';
-    width: 30rem;
-    position: relative;
-  }
-  
-  .textbox {
-    border: 1px solid #f3f3f3;
-    height: 2rem;
-    outline: none;
-    box-sizing: border-box;
-    padding: 1px 10px;
-    transition: 0.2s ease-in-out;
-    width: 100%;
-  }
-  
-  .textbox:focus {
-    /* We'll change the border color of the textbox as long as it is being focused */
-    border: 1px solid blue;
-    transition: 0.2s ease-in-out;
-  }
-  
-  .suggestions {
-    /* Styles of the suggestions container */
-    overflow-y: scroll;
-    border: 1px solid #f3f3f3;
-    background-color: white;
-    max-height: 20rem;
-    width: 100%;
-    height: fit-content;
-    position: absolute;
-    z-index: 10;
-  }
-  
-  .suggestions.hidden {
-    /* Will hide the suggestions */
-    visibility: hidden; 
-    opacity: 0
-  }
-  
-  .suggestion {
-    /* Styling of a single suggestion */
-    cursor: pointer;
-    box-sizing: border-box;
-    padding: 1px 10px;
-    height: 2rem;
-    display: flex;
-    align-items: center;
-  }
-  
-  .suggestion:hover {
-    /* Changing background color on hover */
-    background-color: #f3f3f3;
-  }
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.searchbarContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+}
+
+.searchbar {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
+}
+
+.textbox {
+  width: 600px;
+  padding: 15px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
+}
+
+.button {
+  padding: 15px 25px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.rangeContainer {
+  background: rgba(255, 255, 255, 0);
+  padding: 3px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rangeSlider {
+  width: 600px;
+  margin-top: 10px;
+}

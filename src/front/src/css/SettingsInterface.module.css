@@ -1,0 +1,27 @@
+.container {
+  position: fixed; /* Make it fixed to the viewport */
+  top: 50px; /* Adjust as necessary */
+  right: 50px; /* Adjust as necessary */
+  width: 250px; /* Adjust width as necessary */
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it is above other elements */
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.rangeSlider {
+  width: 100%;
+  margin-top: 10px;
+}

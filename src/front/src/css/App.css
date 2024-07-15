@@ -8,7 +8,7 @@
 }
 
 .HomePage {
-
+  display: flex;
 }
 
 @media (prefers-reduced-motion: no-preference) {

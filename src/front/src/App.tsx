@@ -8,6 +8,7 @@ import LoginPage from './LoginPage';
 import SearchPage from './SearchPage';
 import UserProfile from './UserProfile';
 import MapPage from './MapPage';
+import StoresPage from './StoresPage';
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Route path="/search" element={<SearchPage/>} />
         <Route path="/profile" element={<UserProfile/>} />
         <Route path="/map" element={<MapPage/>} />
+        <Route path="/stores" element={<StoresPage/>} />
       </Routes>
     </Router>
   );

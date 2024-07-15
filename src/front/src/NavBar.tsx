@@ -31,7 +31,7 @@ function Navbar() {
               <a href='Map' className={`${styles.navLink} ${styles.Map}`}>Map</a>
             </li>
             <li onClick={removeActive}>
-              <a href='#home' className={`${styles.navLink}`}>Stores</a>
+              <a href='/stores' className={`${styles.navLink}`}>Stores</a>
             </li>
             <li onClick={removeActive}>
               <a href='#home' className={`${styles.navLink}`}>Order</a>
