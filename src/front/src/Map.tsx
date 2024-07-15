@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { GoogleMap, Marker, useLoadScript } from '@react-google-maps/api';
 import styles from './css/Map.module.css'; // Adjust the path as necessary
+import MapSettings from "./MapSettings"
 
 const containerStyle = {
   width: '100%',
@@ -77,6 +78,7 @@ const MapComponent: React.FC = () => {
         
       )}
       </div>
+      <MapSettings/>
       <GoogleMap mapContainerStyle={containerStyle} center={currentPosition} zoom={6}>
         <Marker position={currentPosition} />
       </GoogleMap>

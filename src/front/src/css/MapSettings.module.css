@@ -1,0 +1,43 @@
+/* Button styles in your CSS module file */
+.absoluteButton {
+    position: absolute;
+    top: 20%;  
+    left: 95%;  
+    width: 50px; 
+    height: 50px; 
+    background-size: cover;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    z-index: 980;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .settingsScreen {
+    position: absolute;
+    top: 20%;  /* Adjust these values as needed */
+    left: 75%;  /* Adjust these values as needed */
+    width: 300px;  /* Adjust these values as needed */
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: none;
+    z-index: 991;
+  }
+  
+  .settingsScreen.visible {
+    display: block;
+  }
+  
+  .rangeBar {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .rangeContainer {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
