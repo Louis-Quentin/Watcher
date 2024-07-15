@@ -65,7 +65,8 @@ const MapComponent: React.FC = () => {
   }
 
   return (
-    <div>
+    <div >
+      <div className={styles.container}>
       {error && (
         <div className={styles.errorMessage}>
           {error}
@@ -73,10 +74,13 @@ const MapComponent: React.FC = () => {
             Retry
           </button>
         </div>
+        
       )}
-      <GoogleMap mapContainerStyle={containerStyle} center={currentPosition} zoom={15}>
+      </div>
+      <GoogleMap mapContainerStyle={containerStyle} center={currentPosition} zoom={6}>
         <Marker position={currentPosition} />
       </GoogleMap>
+      
     </div>
   );
 };

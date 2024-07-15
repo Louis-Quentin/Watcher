@@ -21,7 +21,6 @@ import MapComponent from './Map';
     return (
         <div className={styles.HomePage}>
             <Navbar/>
-            <SearchBar/>
             <MapComponent/>
             <Footer/>
         </div>
