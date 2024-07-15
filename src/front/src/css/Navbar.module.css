@@ -70,6 +70,7 @@ a {
   margin: auto;
   border-style: none;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .navMenu {
