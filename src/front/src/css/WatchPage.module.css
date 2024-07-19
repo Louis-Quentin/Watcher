@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'TimesNewLightItalic';
+    src: url('http://localhost:3000/fonts/times-now-extralight-italic.woff2') format('woff2')
+}
+
+.WatchCard {
+    display: flex;
+    margin-left: 300px;
+    margin-top: 210px;
+    margin-right: 300px;
+    background-color: white;
+    border-color: #0db193;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 18px;
+    height: 700px;
+    width: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.WatchImg {
+    background-size: cover; 
+    background-position: center;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    width: 50%;
+}
+
+.WatchData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.Name {
+    margin-top: 10px;
+    font-size: 35px;
+    font-family: TimesNewLightItalic;
+}
+
+.WatchDataChild {
+    flex-direction: row;
+    margin-top: 40px;
+    border-radius: 18px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    height: 550px;
+    width: 80%;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.Text {
+    margin-left: 30px;
+    margin-top: 6px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.Item {
+    display: flex;
+    flex-direction: row !important;
+    margin-top: 10px;
+}
+
+.SecondHand {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Overlay {
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.1); /* semi-transparent background */
+    z-index: 1000; /* ensure it's above other content */
+    border-radius: 18px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+.Hidden {
+    opacity: 0;
+    pointer-events: none; /* Make it unclickable when hidden */
+}
+
+/* Button.module.css */
+
+.RoundButton {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-left: 285px;
+    width: 120px; /* Adjust width to fit longer arrow */
+    height: 50px;
+    background-color: #0db193;/* Button color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+    font-size: 24px;
+  }
+  
+  /*.RoundButton::before {
+    content: '';
+    position: absolute;
+    margin-left: 70px;
+    width: 25px;
+    height: 4px; 
+    background-color: white;
+    transform: rotate(0deg);
+  }
+  
+  .RoundButton::after {
+    content: '';
+    position: absolute;
+    width: 15px; 
+    height: 15px;
+    border-top: 4px solid white; 
+    border-right: 4px solid white; 
+    transform: rotate(45deg); 
+    right: 15px; 
+  }*/
+  
+  .RoundButton:hover {
+    background-color: #0c927a;/* Button color */
+  }
+  
+  
