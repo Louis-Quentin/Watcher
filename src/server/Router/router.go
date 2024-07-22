@@ -49,6 +49,34 @@ func Home_reco(context *gin.Context) {
 	context.JSON(http.StatusOK, payload)
 }
 
+func Stores_around(context *gin.Context) {
+	fp := "./stores_sample.json"
+	absFp, err := filepath.Abs(fp)
+	if err != nil {
+		log.Fatal("Error getting absolute file path: ", err)
+		return
+	}
+
+	content, err := ioutil.ReadFile(absFp)
+	if err != nil {
+		log.Fatal("Error when opening file: ", err)
+		return
+	}
+
+	var payload []Models.Watch
+	err = json.Unmarshal(content, &payload)
+	if err != nil {
+		log.Fatal("Error during Unmarshal(): ", err)
+		return
+	}
+
+	for _, watch := range payload {
+		fmt.Println(watch.Name)
+	}
+
+	context.JSON(http.StatusOK, payload)
+}
+
 
 func Handle_home_request(context *gin.Context) {
 	var msg string

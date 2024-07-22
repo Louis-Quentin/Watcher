@@ -10,6 +10,7 @@ import UserProfile from './UserProfile';
 import MapPage from './MapPage';
 import StoresPage from './StoresPage';
 import WatchPage from './WatchPage';
+import RetailerPage from './RetailerPage'
 
 const App: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const App: React.FC = () => {
         <Route path="/map" element={<MapPage/>} />
         <Route path="/stores" element={<StoresPage/>} />
         <Route path ="/watch" element={<WatchPage/>} />
+        <Route path ="/retailer/:id" element={<RetailerPage/>} />
       </Routes>
     </Router>
   );

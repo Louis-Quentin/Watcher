@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'TimesNewLightItalic';
+    src: url('http://localhost:3000/fonts/times-now-extralight-italic.woff2') format('woff2')
+}
+
+.Retailer {
+    display: flex;
+    height: 600px;
+    background-color: aqua;
+}
+
+.Name {
+    margin-top: 10px;
+    font-size: 35px;
+    font-family: TimesNewLightItalic;
+    color:black;
+}
