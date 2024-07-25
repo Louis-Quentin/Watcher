@@ -76,7 +76,7 @@ const MapComponent: React.FC = () => {
     }
   };
 
-  useEffect(() => {
+  useEffect(() => { 
     requestLocation();
   }, []);
 
@@ -85,23 +85,24 @@ const MapComponent: React.FC = () => {
     try {
       const response = await axios.get(apiUrl);
       const results = response.data.results;
-
+  
       // Process each retailer to include photo URL if available
       const processedRetailers = results.map((retailer: any) => {
         if (retailer.photos && retailer.photos.length > 0) {
           const photoReference = retailer.photos[0].photo_reference;
-          retailer.photoUrl = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${photoReference}&key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`;
+          retailer.photoUrl = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&maxheight=700&photoreference=${photoReference}&key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`;
         } else {
           retailer.photoUrl = null;
         }
         return retailer;
       });
-
+  
       setRetailers(processedRetailers);
     } catch (error) {
       console.error('Error fetching retailers:', error);
     }
   };
+  
 
   if (loadError) {
     return <div>Error loading maps</div>;
