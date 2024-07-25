@@ -1,51 +1,44 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './css/UserProfile.module.css';
+import Navbar from './NavBar';
+import HomeLanding from './HomeLanding';
 
 const UserProfile: React.FC = () => {
+  const handleProfileClick = () => {
+    <HomeLanding/>
+  };
   return (
     <div className={styles.container}>
-      <Link to="/" className={styles.backButton}>Return</Link>
+      <Navbar/>
+      <div className={styles.column}>
+      <div className={styles.link} onClick={handleProfileClick}>
+          <div className={styles.item}>Profile</div>
+        </div>
+      </div>
       <div className={styles.column}>
         <Link to="/orders" className={styles.link}>
           <div className={styles.item}>Orders</div>
-          <hr className={styles.separator} />
-          <div className={styles.arrow}></div>
+        </Link>
+      </div>
+      <div className={styles.column}>
+        <Link to="/favorites" className={styles.link}>
+          <div className={styles.item}>Favorites</div>
         </Link>
       </div>
       <div className={styles.column}>
         <Link to="/messages" className={styles.link}>
           <div className={styles.item}>Messages</div>
-          <hr className={styles.separator} />
-          <div className={styles.arrow}></div>
         </Link>
       </div>
       <div className={styles.column}>
         <Link to="/waiting-lists" className={styles.link}>
           <div className={styles.item}>Waiting lists</div>
-          <hr className={styles.separator} />
-          <div className={styles.arrow}></div>
         </Link>
       </div>
       <div className={styles.column}>
         <Link to="/settings" className={styles.link}>
           <div className={styles.item}>Settings</div>
-          <hr className={styles.separator} />
-          <div className={styles.arrow}></div>
-        </Link>
-      </div>
-      <div className={styles.column}>
-        <Link to="/help" className={styles.link}>
-          <div className={styles.item}>Help</div>
-          <hr className={styles.separator} />
-          <div className={styles.arrow}></div>
-        </Link>
-      </div>
-      <div className={styles.column}>
-        <Link to="/info" className={styles.link}>
-          <div className={styles.item}>Info</div>
-          <hr className={styles.separator} />
-          <div className={styles.arrow}></div>
         </Link>
       </div>
     </div>
