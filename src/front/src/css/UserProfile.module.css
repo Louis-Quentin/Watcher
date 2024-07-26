@@ -1,9 +1,12 @@
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 170px;
+  flex-wrap: wrap;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 80px;
 }
 
 .column {
@@ -11,13 +14,7 @@
   align-items: center;
   position: relative;
   margin-bottom: 40px;
-}
-
-.backButton {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  color: rgb(0, 0, 0);
+  margin-right: 70px;
 }
 
 .item {
@@ -35,4 +32,18 @@
   right: -20px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.userContainer {
+  width: 100%;
+  padding: 20px;
+}
+
+.userContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  margin-bottom: 60px; /* Add spacing between sections */
 }

@@ -1,0 +1,149 @@
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    justify-content: flex-start;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: lighter;
+    margin-right: auto;
+}
+
+.viewAllLink {
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: normal;
+    white-space: nowrap;
+    transition: color 0.3s;
+}
+
+.viewAllLink:hover {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sliderContainer {
+    width: 100%;
+    position: relative;
+}
+
+.slide {
+    position: relative;
+    height: 400px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.imageContainer {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sliderImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.descriptionContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.slide:hover .descriptionContainer {
+    opacity: 1;
+}
+
+.description {
+    margin: 0;
+}
+
+.price {
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+.arrowButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nextArrow {
+    right: 10px;
+}
+
+.prevArrow {
+    left: 10px;
+}
+
+.slick-prev,
+.slick-next {
+    display: none !important;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slick-dots li {
+    display: none;
+}
+
+.slick-dots::before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 4px;
+    background-color: #ddd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+    z-index: 1;
+}
+
+.slick-dots .slick-active::before {
+    background-color: #ffffff;
+}
+
+.slick-dots {
+    z-index: 2;
+}

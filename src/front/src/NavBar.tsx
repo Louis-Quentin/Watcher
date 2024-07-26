@@ -58,7 +58,6 @@ function Navbar() {
             <li onClick={removeActive}>
               <Link to="/login" className={`${styles.navLink}`}>LogIn</Link>
             </li>
-           
           </div>
         </ul>
 
