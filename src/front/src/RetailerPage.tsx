@@ -3,6 +3,7 @@ import Navbar from './NavBar';
 import Footer from './Footer';
 import styles from './css/RetailerPage.module.css';
 import { useLocation } from 'react-router-dom';
+import StarRating from './StarRating';
 
 interface Photo {
     photo_reference: string;
@@ -40,9 +41,24 @@ const RetailerPage: React.FC = () => {
           <div className={styles.storeImg}>No image available</div>
         )}
         <div className={styles.storeData}>
-          <div className={styles.Name}>{retailer.name}</div>
-          <div className={styles.openingHours}>
-            {retailer.opening_hours.weekday_text}
+            <div className={styles.Name}>{retailer.name}</div>
+            <div className={styles.dataCol}>
+                <div className={styles.childRow}>
+                    <div className={styles.square}/>
+                    <div className={`${styles.text}`}>{retailer.vicinity}</div>
+                </div>
+            </div>
+            <div className={styles.dataCol}>
+                <div className={styles.childRow}>
+                    <div className={styles.square}/>
+                    <div className={styles.line}>
+                        <StarRating rating={retailer.rating}/>
+                        <div className={styles.text}>by {retailer.user_ratings_total} users</div>
+                    </div>
+                </div>
+          </div>
+          <div>
+            {retailer.reviews[0]}
           </div>
         </div>
       </div>

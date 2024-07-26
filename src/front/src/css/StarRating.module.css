@@ -1,0 +1,7 @@
+/* src/components/StarRating.css */
+.starRating {
+    display: flex;
+    margin-top: 3px;
+    margin-left: 20px;
+    color: gold;
+}
